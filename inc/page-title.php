@@ -6,7 +6,7 @@
 		<?php elseif ( is_single() ): ?>
 
 		<?php elseif ( is_page() ): ?>
-			<h2><?php the_title(); ?></h2>
+			<h6><?php the_title(); ?></h6>
 
 		<?php elseif ( is_search() ): ?>
 			<h1>
