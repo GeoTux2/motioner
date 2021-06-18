@@ -2,7 +2,7 @@
 	<div class="page-title-inner group">
 	
 		<?php if ( is_home() ) : ?>
-			<h2><?php echo motioner_blog_title(); ?></h2>
+			<!-- <h2><?php echo motioner_blog_title(); ?></h2> -->
 		<?php elseif ( is_single() ): ?>
 
 		<?php elseif ( is_page() ): ?>
