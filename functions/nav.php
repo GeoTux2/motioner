@@ -182,9 +182,9 @@ class Nav {
 				?>
 			</button>
 			<?php wp_nav_menu( $args ); ?>
-			<?php if ( $args['theme_location'] == 'header' ): ?>
-                              <ul class="lang-switcher"><?php pll_the_languages(array('show_flags'=>1, 'show_names'=>0));?></ul>
-                        <?php endif; ?>
+			<?php if ( $args['theme_location'] == 'header' )                        
+                                echo '<ul class="lang-switcher">' . pll_the_languages(array('show_flags'=>1, 'show_names'=>0)) . '</ul>';
+                        ?>
 		</nav>
 		<?php
 	}
