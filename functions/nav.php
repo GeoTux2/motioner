@@ -181,9 +181,10 @@ class Nav {
 				echo $toggle_label; // phpcs:ignore WordPress.Security.EscapeOutput
 				?>
 			</button>
-			<?php wp_nav_menu( $args ); ?>
-			<?php if ( $args['theme_location'] == 'header' )                        
-                                echo '<ul class="lang-switcher">' . pll_the_languages(array('show_flags'=>1, 'show_names'=>0)) . '</ul>';
+			<?php wp_nav_menu( $args ); 
+                        if ( $args['theme_location'] == 'header' ) {?>
+                               <ul class="lang-switcher"> <?php pll_the_languages(array('show_flags'=>1, 'show_names'=>0)); ?></ul>
+                        <?php }
                         ?>
 		</nav>
 		<?php
