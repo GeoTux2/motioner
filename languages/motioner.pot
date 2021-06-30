@@ -783,6 +783,10 @@ msgstr ""
 msgid "To search type and hit enter"
 msgstr ""
 
+#: single.php:15
+msgid "By"
+msgstr ""
+
 #: single.php:26
 msgid "Pages:"
 msgstr ""
