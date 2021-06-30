@@ -30,7 +30,7 @@
 		<div class="type-list-right">
 			<div class="type-list-date"><?php the_time( get_option('date_format') ); ?></div>
 			<div class="type-list-category">
-				<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+				<?php esc_html_e('By','motioner'); ?> <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 					<?php the_author_meta('display_name'); ?>
 				</a>
 			</div>
