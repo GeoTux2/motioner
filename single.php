@@ -12,11 +12,11 @@
 						<h1 class="entry-title"><?php the_title(); ?></h1>
 						<div class="entry-meta">
 							<span class="entry-category">
-								<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
+								<?php esc_html_e('By','motioner'); ?> <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 									<?php the_author_meta('display_name'); ?>
 								</a>
 							</span> &middot;
-							<span class="entry-date"><?php the_time( get_option('date_format') ); ?></span>
+							<span class="entry-date"><?php the_time( get_option('date_format') ); ?></span> &middot;
 							<span class="entry-category"><?php the_category(' / '); ?></span>
 						</div>
 					</header>
