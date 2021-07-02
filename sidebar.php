@@ -22,6 +22,7 @@
 						<?php endif; ?>
 					</div>
 				</div>
+				<?php echo do_shortcode( '[WP-Coder title="revolvermaps"]' ); ?>
 			<?php endif; ?>
 			
 			<?php if ( get_theme_mod( 'post-nav', 'sidebar' ) == 'sidebar' ) { get_template_part('inc/post-nav'); } ?>
