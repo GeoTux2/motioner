@@ -34,7 +34,11 @@
 					<?php the_author_meta('display_name'); ?>
 				</a>
 			</div>
-			<div class="type-list-category"><?php the_category(' / '); ?></div>
+			<div class="type-list-category">
+				<span class="dashicons dashicons-open-folder"></span>
+				<?php the_category(' / '); ?>
+			</div>
+			<div class="type-list-category"><?php echo do_shortcode( '[post-views]' ); ?></div>
 			<?php if ( comments_open() && ( get_theme_mod( 'comment-count', 'on' ) == 'on' ) ): ?>
 				<a class="post-comments" href="<?php comments_link(); ?>"><span><?php comments_number( '0', '1', '%' ); ?></span></a>
 			<?php endif; ?>
