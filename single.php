@@ -17,7 +17,11 @@
 								</a>
 							</span> &middot;
 							<span class="entry-date"><?php the_time( get_option('date_format') ); ?></span> &middot;
-							<span class="entry-category"><?php the_category(' / '); ?></span>
+							<span class="entry-category">
+                                                                <span class="dashicons dashicons-open-folder"></span>
+                                                                <?php the_category(' / '); ?>
+                                                        </span> &middot;
+                                                        <span class="entry-category"><?php echo do_shortcode( '[post-views]' ); ?></span>
 						</div>
 					</header>
 
